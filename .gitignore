@@ -3,3 +3,6 @@
 **/._.DS_Store
 ._.DS_Store
 **/.pyc
+Images/
+Videos/
+Scripts/__pycache__/
