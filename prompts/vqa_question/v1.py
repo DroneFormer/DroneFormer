@@ -24,7 +24,7 @@ Find the number of red cars in the image
 
 QUESTION:
 ------------------
-1. How many red cars are there in the image?
+1. @How many red cars are there in the image?@
 
 JUSTIFICATION:
 ------------------
@@ -38,9 +38,9 @@ Is there someone wearing a red shirt and a blue hat in the image?
 
 QUESTION:
 ------------------
-1. Is there a person in the image?
-2. Is there a red shirt in the image?
-3. Is there a blue hat in the image?
+1. @Is there a person in the image?@
+2. @Is there a red shirt in the image?@
+3. @Is there a blue hat in the image?@
 
 JUSTIFICATION:
 ------------------
@@ -56,10 +56,10 @@ How many bags is the person wearing a red shirt and a blue hat carrying in the i
 
 QUESTION:
 ------------------
-1. Is there a person in the image?
-2. Is there a red shirt in the image?
-3. Is there a blue hat in the image?
-4. How many bags are there in the image?
+1. @Is there a person in the image?@
+2. @Is there a red shirt in the image?@
+3. @Is there a blue hat in the image?@
+4. @How many bags are there in the image?@
 
 JUSTIFICATION:
 ------------------
