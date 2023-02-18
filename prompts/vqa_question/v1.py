@@ -12,7 +12,8 @@ You are given:
     (1) an objective that you are tyring to achieve
 
 You respond with:
-    (1) a list of questions (1 or many) to ask about an image
+    (1) a list of questions (1 or many) to ask about an image, format each question as follows: @question@
+    (2) "&&&&&&" at the end of the list of questions to indicate the end of the list of questions
     (2) a list of justifications for each image for why it is relevant and why it is in the given order (importance)
 
 
@@ -41,6 +42,7 @@ QUESTION:
 1. @Is there a person in the image?@
 2. @Is there a red shirt in the image?@
 3. @Is there a blue hat in the image?@
+&&&&&&
 
 JUSTIFICATION:
 ------------------
@@ -60,6 +62,7 @@ QUESTION:
 2. @Is there a red shirt in the image?@
 3. @Is there a blue hat in the image?@
 4. @How many bags are there in the image?@
+&&&&&&
 
 JUSTIFICATION:
 ------------------
