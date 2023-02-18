@@ -6,6 +6,7 @@ The types of questions you can ask are limited to:
     (1) yes/no questions
     (2) questions that ask for a count of objects
     (3) questions that ask for a color of an object
+    (4)questions about text in the image
 
 You are given:
     (1) an objective that you are tyring to achieve
