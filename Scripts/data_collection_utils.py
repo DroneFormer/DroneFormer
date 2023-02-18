@@ -14,6 +14,30 @@ def take_individual_picture(drone):
     title = "image_" + str(time.time()) + ".jpg"
     current_frame = frame_read.frame
     cv2.imwrite(os.path.join(image_directory, title), current_frame)
+
+def stream_frames(drone):
+    drone.streamon()
+    while True:
+        img = drone.get_frame_read().frame
+        img = cv2.resize(img, (360, 240))
+        cv2.imshow("Image", img)
+        cv2.waitKey(1)
+
+
+def record_streamed_frames(drone):
+    drone.streamon()
+    frame = drone.get_frame_read().frame
+    height, width, _ = frame.shape
+    video = cv2.VideoWriter( "outputvideo1.mp4",cv2.VideoWriter_fourcc(*"MP4V"),30,(width,height))
+
+    start = time.time()
+    while (time.time() - start) < 60:
+        frame = drone.get_frame_read().frame
+        video.write(frame)
+        time.sleep(1/30)
+    
+    video.release()
+    
     
     
 def stream_video():
