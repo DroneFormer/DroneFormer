@@ -11,17 +11,21 @@ def take_individual_picture(drone):
     drone.streamon()
     frame_read = drone.get_frame_read()
     image_directory = os.path.join(os.path.abspath(os.path.join('..')), "Images")
-    title = "image_" + str(time.time()) + ".jpg"
+    title = "single_image_" + str(time.time()) + ".jpg"
     current_frame = frame_read.frame
     cv2.imwrite(os.path.join(image_directory, title), current_frame)
 
-def stream_frames(drone):
+def stream_frames(drone, save=False):
     drone.streamon()
     while True:
         img = drone.get_frame_read().frame
         img = cv2.resize(img, (360, 240))
+        if save:
+            title = "image_" +str(time.time()) + ".jpg"
+            cv2.imwrite("./"+title, img)
         cv2.imshow("Image", img)
         cv2.waitKey(1)
+        
 
 
 def record_streamed_frames(drone):
