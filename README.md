@@ -37,3 +37,8 @@ OpenAI Whisper will be implemented to decode live audio into natural language pr
 
 DroneFormer will be a new type of personal assistant — one that always has your back and can bring the magic of complex language model planning to the embodied real world.
 
+# Contributors
+- Brian Wu [@brianwu568](https://github.com/brianwu568)
+- Sidhant K. Bendre [@KING-SID](https://github.com/KING-SID)
+- Michael Tang [@michaelwilliamtang](https://github.com/michaelwilliamtang)
+- Ioana Marinescu [@ioanam25](https://github.com/ioanam25)
