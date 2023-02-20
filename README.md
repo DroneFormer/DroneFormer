@@ -26,10 +26,10 @@ Furthermore, embodied ML is a completely different beast than even a simulated r
 # Future Work
 We were primarily constrained by the short battery life of the Tello drone, as well as a limited indoor environment (Stanford Engineering School) to test the Drone in. Expanding to larger and more complex hardware, environments, and tasks, we expect the DroneFormer framework to handily adapt, given a bit of prompt engineering, to emergent sophisticated behaviors such as:
 
-- [] Watching over a child wandering around the house and reporting any unexpected behavior according to a fine-tuned classifier
-- [] Finding that red jacket that you could swear was on the hanger but which has suddenly disappeared
-- []Checking in “person” if the small coffee shop down the street is still open despite the out-of-date Google Maps schedule
-- [] Sending you a picture of the grocery list you forgot at home
+- Watching over a child wandering around the house and reporting any unexpected behavior according to a fine-tuned classifier
+- Finding that red jacket that you could swear was on the hanger but which has suddenly disappeared
+- Checking in “person” if the small coffee shop down the street is still open despite the out-of-date Google Maps schedule
+- Sending you a picture of the grocery list you forgot at home
 
 We intend to replace YOLOv5 with more sophisticated VQA (Visual Question-Answering) models as they become more mainstream; these models will give us the abilities to apply natural language queries directly upon images themselves, and have the model draw bounding boxes for areas of interest as opposed to using YOLOv5 for the same task. VQA will allow for more dynamic operational modes and enable the drone to be more robust - adjusting its action sequence based on its observations of the environment on the fly. 
 
