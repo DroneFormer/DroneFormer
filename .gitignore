@@ -6,4 +6,5 @@
 Images/
 Videos/
 Scripts/__pycache__/
+prompts/__pycache__/
 image_*
