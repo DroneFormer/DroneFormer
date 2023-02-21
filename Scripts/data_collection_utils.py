@@ -7,7 +7,7 @@ import time
 import os
 
 # Helper Functions for Data Collection
-def take_individual_picture(drone) -> None:
+def take_individual_picture(drone: Tello) -> None:
     """
     Uses the camera onboard the DJI Tello Drone to take a singular image. Image is captured via OpenCV interfacing with the Drone stream, and downlinked to the DroneFormer/Images folder.
 
@@ -25,7 +25,7 @@ def take_individual_picture(drone) -> None:
     cv2.imwrite(os.path.join(image_directory, title), current_frame)
     
 
-def stream_frames(drone, save=False):
+def stream_frames(drone: Tello, save=False) -> None:
     """
     Creates and displays a live stream of images from the DJI Tello Drone using OpenCV, frame by frame.
 
@@ -47,7 +47,7 @@ def stream_frames(drone, save=False):
         cv2.waitKey(1)
         
 
-def record_streamed_frames(drone):
+def record_streamed_frames(drone: Tello) -> None:
     """
     Records a live stream of images (frame by frame) from the DJI Tello Drone using OpenCV and saves the frames as an MP4 video file locally.
 
@@ -71,7 +71,7 @@ def record_streamed_frames(drone):
     video.release()
     
     
-def stream_video():
+def stream_video() -> None:
     """
     Legacy function to stream video directly from the DJI Tello Drone and save the resulting video MP4 file simultaneously to the local directory.
     

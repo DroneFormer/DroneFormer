@@ -3,7 +3,7 @@ from djitellopy import Tello
 import time
 
 # Function for specifying a custom flight path
-def flight(drone: Tello):
+def flight(drone: Tello) -> None:
     """
     Controls a DJI Tello drone for a flight from start to finish.
 
